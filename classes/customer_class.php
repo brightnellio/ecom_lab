@@ -27,7 +27,7 @@ class customer_class extends db_connection
 
 		return $this -> db_fetch_one($sql);
 	}
-
+//the function to fetch user email
 	function user_email($cid){
 		$sql = "SELECT customer_email FROM customer WHERE customer_id = '$cid'";
 
