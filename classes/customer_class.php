@@ -20,7 +20,7 @@ class customer_class extends db_connection
 		return $this->db_query($sql);
 	}
 
-	//--SELECT--//
+	//--SELECT--// fetching data
 	function login_customer($a){
 
 		$sql =" SELECT * FROM `customer` WHERE `customer_email` = '$a'";
