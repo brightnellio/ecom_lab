@@ -6,7 +6,7 @@ require_once("../settings/db_class.php");
 *Customer class to handle all customer functions 
 */
 /**
- *@author Kekeli Mensah
+ * 
  *
  */
 
@@ -20,15 +20,14 @@ class customer_class extends db_connection
 		return $this->db_query($sql);
 	}
 
-	//--SELECT--// fetching data
+	//--SELECT--// 
 	function login_customer($a){
 
 		$sql =" SELECT * FROM `customer` WHERE `customer_email` = '$a'";
 
 		return $this -> db_fetch_one($sql);
 	}
-//the function to fetch user email and bright 
-//please work
+
 	function user_email($cid){
 		$sql = "SELECT customer_email FROM customer WHERE customer_id = '$cid'";
 

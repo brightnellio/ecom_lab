@@ -26,18 +26,21 @@ foreach($products as $product) {
     $product_search = search_products_ctrl($search);
     print_r($product_search);
     echo "$product_search";
-    
+  
 
     if ($product_option) {
-         foreach($product_search as $product_one){ 
+     } foreach($product_search as $product_one){ 
             $product_id = $product_one['product_id'];
             $product_name = $product_one['product_title'];
-
+     }
             echo "<option value = $product_id>$product_name</option>";
         
 
   
-    else {echo "<option value = 'not available'>product not found</option>";
+    else {
+
+    }
+      echo "<option value = 'not available'>product not found</option>";
     
 
 
